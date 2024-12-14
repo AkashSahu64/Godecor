@@ -4,12 +4,21 @@ import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react'
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-green-600 text-gray-300">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold text-white mb-4">Godecor</h3>
+            <h3 className="text-xl font-bold text-white mb-4"><Link to="/" className="flex items-center">
+              <span className="w-16 h-16">
+                <img
+                  src="https://thegodecor.com/wp-content/uploads/2021/03/Godecor_Logo_Final-e1614679713868.png.webp"
+                  alt="Logo"
+                  className="w-full h-full object-contain"
+                />
+              </span>
+            </Link>
+            </h3>
             <p className="mb-4">Bringing nature indoors with our premium artificial plants.</p>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-white"><Facebook size={20} /></a>
@@ -60,7 +69,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
+        <div className="border-t border-green-700 mt-8 pt-8 text-center">
           <p>&copy; {new Date().getFullYear()} Godecor. All rights reserved.</p>
         </div>
       </div>

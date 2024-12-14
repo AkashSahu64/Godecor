@@ -7,28 +7,28 @@ const blogPosts = [
     id: '1',
     title: '10 Creative Ways to Display Artificial Plants',
     excerpt: 'Transform your space with these innovative ideas for showcasing artificial plants. From hanging gardens to statement pieces...',
-    image: 'https://images.unsplash.com/photo-1545165375-1b744b9ed444',
+    image: 'https://www.spotlightstores.com/medias/artificial-plants-buying-guide-1.jpg?context=bWFzdGVyfHJvb3R8MTQ3MjkyfGltYWdlL2pwZWd8cm9vdC9oZGIvaGFlLzE2ODY1MDY3Njk2MTU4L2FydGlmaWNpYWwtcGxhbnRzLWJ1eWluZy1ndWlkZS0xLmpwZ3xkODRiZjFiYmZkZDE4MzRlOTAxOWRmZjJhMTZjMDQzZjNjZTljZjNjMzU1NGRhNWE3MGZmNTUyOGZjNmExNDQ1',
     category: 'Design Tips'
   },
   {
     id: '2',
     title: 'The Benefits of Artificial Plants in the Workplace',
     excerpt: 'Discover how artificial plants can boost productivity, reduce stress, and create a more inviting office environment...',
-    image: 'https://images.unsplash.com/photo-1524758631624-e2822e304c36',
+    image: 'https://www.thesenior.com.au/images/transform/v1/crop/frm/rosie.ryan%40fairfaxmedia.com.au/b1d3bf72-2b17-47e7-89fa-2d0ee098fddf.jpg/r0_0_6720_4331_w1200_h678_fmax.jpg',
     category: 'Office Design'
   },
   {
     id: '3',
     title: 'Maintaining Your Artificial Plants',
     excerpt: 'Learn expert tips and tricks to keep your artificial plants looking fresh and beautiful for years to come...',
-    image: 'https://images.unsplash.com/photo-1517497869-39a5e582c76b',
+    image: 'https://www.homeartificial.com/wp-content/uploads/2023/10/how_to_decorate_with_artificial_plants.webp',
     category: 'Care Guide'
   },
   {
     id: '4',
     title: 'Seasonal Decorating with Artificial Plants',
     excerpt: 'Get inspired with our seasonal decorating guide featuring artificial plants that look perfect all year round...',
-    image: 'https://images.unsplash.com/photo-1517497869-39a5e582c76b',
+    image: 'https://img.staticmb.com/mbcontent/images/uploads/2023/3/A-variety-of-green-artificial-plants-for-home-decor.jpg',
     category: 'Seasonal Tips'
   }
 ];
@@ -37,7 +37,7 @@ const BlogSection = () => {
   return (
     <section className="bg-white p-8 rounded-lg shadow-md">
       <h2 className="text-3xl font-bold mb-8 text-center">Latest from Our Blog</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
         {blogPosts.map((post, index) => (
           <motion.article
             key={post.id}

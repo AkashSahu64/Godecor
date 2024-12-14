@@ -14,8 +14,8 @@ const SpecialOffers = () => {
         className="space-y-6"
       >
         {/* Flash Sale */}
-        <div className="bg-gradient-to-r from-green-500 to-green-600 p-6 rounded-xl text-white">
-          <div className="flex items-center justify-between mb-4">
+        <div className="bg-gradient-to-r from-green-400 to-green-500 p-4 rounded-xl text-white">
+          <div className="flex items-center justify-between mb-2">
             <div className="flex items-center space-x-2">
               <Sparkles className="w-6 h-6" />
               <h3 className="text-xl font-bold">Flash Sale</h3>
@@ -32,7 +32,7 @@ const SpecialOffers = () => {
             <Truck className="w-6 h-6" />
             <h3 className="text-xl font-bold">Free Shipping</h3>
           </div>
-          <p className="text-lg mt-2">On all orders over $50</p>
+          <p className="text-lg mt-2">On all orders over all India</p>
         </div>
 
         {/* Gift Card */}
@@ -41,7 +41,7 @@ const SpecialOffers = () => {
             <Gift className="w-6 h-6" />
             <h3 className="text-xl font-bold">Gift Card Special</h3>
           </div>
-          <p className="text-lg mt-2">Buy a $100 gift card, get $20 extra free!</p>
+          <p className="text-lg mt-2">Buy a ₹500 gift card, get ₹20 extra free!</p>
         </div>
       </motion.div>
     </section>

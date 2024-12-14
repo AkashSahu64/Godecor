@@ -24,7 +24,7 @@ const features = [
   {
     icon: Truck,
     title: 'Free Shipping',
-    description: 'Free delivery on all orders over $50',
+    description: 'Free delivery on all orders over all India',
     color: 'bg-orange-50 text-orange-600'
   },
   {

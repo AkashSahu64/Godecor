@@ -8,7 +8,7 @@ interface ProductCardProps {
 
 const ProductCard = ({ product }: ProductCardProps) => {
   return (
-    <div className="card group">
+    <div className="card group border border-green-100 shadow-lg">
       <div className="relative overflow-hidden">
         <img
           src={product.image}
@@ -31,7 +31,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
         <h3 className="text-lg font-semibold mb-2">{product.name}</h3>
         <p className="text-gray-600 mb-2">{product.description}</p>
         <div className="flex items-center justify-between">
-          <span className="text-xl font-bold text-green-600">${product.price}</span>
+          <span className="text-xl font-bold text-green-600">₹{product.price}</span>
           <button className="btn-primary flex items-center space-x-2">
             <ShoppingCart size={20} />
             <span>Add to Cart</span>

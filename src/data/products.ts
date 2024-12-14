@@ -5,8 +5,8 @@ export const products: Product[] = [
     id: '1',
     name: 'Artificial Monstera',
     category: 'Large Plants',
-    price: 89.99,
-    image: 'https://images.unsplash.com/photo-1602923668104-110e64c43df5',
+    price: 348.99,
+    image: 'https://rukminim2.flixcart.com/image/612/612/xif0q/artificial-plant/1/d/o/yes-plant01-godecor-original-imagh9p23ymdfrgj.jpeg?q=70',
     description: 'Realistic artificial Monstera plant perfect for modern spaces.',
     isBestSeller: true
   },
@@ -14,8 +14,8 @@ export const products: Product[] = [
     id: '2',
     name: 'Fiddle Leaf Fig',
     category: 'Large Plants',
-    price: 129.99,
-    image: 'https://images.unsplash.com/photo-1597055181300-e3633a207518',
+    price: 209.99,
+    image: 'https://rukminim2.flixcart.com/image/612/612/kyuge4w0/artificial-flower/o/p/c/1-afl104-godecor-original-imagazr9ys6rynmw.jpeg?q=70',
     description: 'Tall and dramatic artificial Fiddle Leaf Fig tree.',
     isNewArrival: true
   },
@@ -23,8 +23,8 @@ export const products: Product[] = [
     id: '3',
     name: 'Snake Plant',
     category: 'Small Plants',
-    price: 49.99,
-    image: 'https://images.unsplash.com/photo-1593482892290-f54927ae1bb6',
+    price: 259.99,
+    image: 'https://rukminim2.flixcart.com/image/612/612/xif0q/artificial-plant/4/q/1/26-yes-wild-artificial-plat-with-boat-pot-godecor-original-imah5zc5bsqsr4hr.jpeg?q=70',
     description: 'Low-maintenance artificial Snake Plant for any corner.',
     isBestSeller: true
   },
@@ -32,9 +32,9 @@ export const products: Product[] = [
     id: '4',
     name: 'Hanging Pothos',
     category: 'Hanging Plants',
-    price: 39.99,
-    image: 'https://images.unsplash.com/photo-1591454371758-644f9d123a81',
-    description: 'Beautiful trailing artificial Pothos plant.',
+    price: 199.99,
+    image: 'https://rukminim2.flixcart.com/image/612/612/kyg5zm80/artificial-plant/o/d/l/18-yes-multicolor-godecor-original-imagazp9h8yhndhe.jpeg?q=70',
+    description: 'Beautiful trailing artificial Pothos plant place anywhere.',
     isNewArrival: true
   },
   {
