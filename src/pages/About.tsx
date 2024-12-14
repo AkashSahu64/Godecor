@@ -10,7 +10,7 @@ const About = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
-        <h1 className="section-title">About Plantify</h1>
+        <h1 className="section-title">About Godecor</h1>
         
         {/* Hero Section */}
         <div className="relative h-[400px] rounded-xl overflow-hidden mb-16">
@@ -30,7 +30,7 @@ const About = () => {
         <div className="mb-16">
           <h2 className="text-2xl font-bold mb-4">Our Story</h2>
           <p className="text-gray-600 leading-relaxed mb-4">
-            Founded in 2020, Plantify began with a simple mission: to bring the beauty of nature 
+            Founded in 2020, Godecor began with a simple mission: to bring the beauty of nature 
             indoors without the hassle of maintenance. We understand that while many people love 
             the aesthetic appeal of plants, not everyone has the time or expertise to care for them.
           </p>
@@ -69,17 +69,17 @@ const About = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: 'John Smith',
+                name: 'Vinay Kumar',
                 role: 'Founder & CEO',
                 image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e'
               },
               {
-                name: 'Sarah Johnson',
+                name: 'Vinay Kumar',
                 role: 'Head of Design',
                 image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330'
               },
               {
-                name: 'Michael Chen',
+                name: 'Vinay Kumar',
                 role: 'Product Manager',
                 image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e'
               }

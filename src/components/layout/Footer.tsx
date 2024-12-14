@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Company Info */}
           <div>
-            <h3 className="text-xl font-bold text-white mb-4">Plantify</h3>
+            <h3 className="text-xl font-bold text-white mb-4">Godecor</h3>
             <p className="mb-4">Bringing nature indoors with our premium artificial plants.</p>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-white"><Facebook size={20} /></a>
@@ -50,7 +50,7 @@ const Footer = () => {
               </li>
               <li className="flex items-center space-x-2">
                 <Mail size={16} />
-                <span>support@plantify.com</span>
+                <span>support@godecor.com</span>
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin size={16} />
@@ -61,7 +61,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p>&copy; {new Date().getFullYear()} Plantify. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Godecor. All rights reserved.</p>
         </div>
       </div>
     </footer>
