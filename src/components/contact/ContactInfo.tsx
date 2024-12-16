@@ -11,12 +11,12 @@ const ContactInfo = () => {
         </p>
       </div>
 
-      <div className="space-y-4">
+      <div className="space-y-4 ">
         <div className="flex items-start space-x-4">
           <Phone className="w-6 h-6 text-green-600 mt-1" />
           <div>
             <h3 className="font-semibold">Phone</h3>
-            <p>+1 (555) 123-4567</p>
+            <p>+91 9716584915, +91 9625643745</p>
           </div>
         </div>
 
@@ -24,7 +24,7 @@ const ContactInfo = () => {
           <Mail className="w-6 h-6 text-green-600 mt-1" />
           <div>
             <h3 className="font-semibold">Email</h3>
-            <p>support@plantify.com</p>
+            <p>admin@thegodecor.com</p>
           </div>
         </div>
 
@@ -32,7 +32,7 @@ const ContactInfo = () => {
           <MapPin className="w-6 h-6 text-green-600 mt-1" />
           <div>
             <h3 className="font-semibold">Address</h3>
-            <p>123 Green Street<br />Plant City, PC 12345</p>
+            <p>475A, H-Block, Phase-6, Aya Nagar, New Delhi-47</p>
           </div>
         </div>
 

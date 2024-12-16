@@ -9,6 +9,7 @@ interface ProductFilterProps {
   onSearchChange: (term: string) => void;
   priceRange: [number, number];
   onPriceRangeChange: (range: [number, number]) => void;
+  onClose?: () => void; // Optional close button for small devices
 }
 
 const ProductFilter = ({
@@ -19,9 +20,19 @@ const ProductFilter = ({
   onSearchChange,
   priceRange,
   onPriceRangeChange,
+  onClose,
 }: ProductFilterProps) => {
   return (
-    <div className="w-full md:w-64 bg-white p-4 rounded-lg shadow-md h-fit space-y-6">
+    <div className="w-full md:w-64 bg-white p-4 rounded-lg h-fit space-y-6">
+      {/* Close Button for Small Devices */}
+      {onClose && (
+        <div className="flex justify-end">
+          <button onClick={onClose} className="text-red-500 font-bold">
+            Close
+          </button>
+        </div>
+      )}
+
       {/* Search */}
       <div className="space-y-2">
         <h3 className="font-semibold">Search</h3>
@@ -65,15 +76,17 @@ const ProductFilter = ({
         <h3 className="font-semibold">Price Range</h3>
         <div className="space-y-4">
           <div className="flex justify-between text-sm">
-            <span>${priceRange[0]}</span>
-            <span>${priceRange[1]}</span>
+            <span>₹{priceRange[0]}</span>
+            <span>₹{priceRange[1]}</span>
           </div>
           <input
             type="range"
             min="0"
             max="200"
             value={priceRange[1]}
-            onChange={(e) => onPriceRangeChange([priceRange[0], parseInt(e.target.value)])}
+            onChange={(e) =>
+              onPriceRangeChange([priceRange[0], parseInt(e.target.value)])
+            }
             className="w-full"
           />
         </div>

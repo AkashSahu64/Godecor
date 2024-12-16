@@ -23,8 +23,8 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6">
-      <div>
+    <form onSubmit={handleSubmit} className="space-y-6 w-full h-full rounded-lg bg-slate-100">
+      <div className="flex flex-col space-y-1 ml-5 lg:ml-8 mt-5 w-[90%]">
         <label htmlFor="name" className="block text-sm font-medium text-gray-700">
           Name
         </label>
@@ -35,11 +35,11 @@ const ContactForm = () => {
           value={formData.name}
           onChange={handleChange}
           required
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+          className="mt-2 h-8 outline-none block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
         />
       </div>
 
-      <div>
+      <div className="flex flex-col space-y-1 ml-5 lg:ml-8 mt-5 w-[90%]">
         <label htmlFor="email" className="block text-sm font-medium text-gray-700">
           Email
         </label>
@@ -50,11 +50,11 @@ const ContactForm = () => {
           value={formData.email}
           onChange={handleChange}
           required
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+          className="mt-2 h-8 outline-none block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
         />
       </div>
 
-      <div>
+      <div className="flex flex-col space-y-1 ml-5 lg:ml-8 mt-5 w-[90%]">
         <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
           Phone Number
         </label>
@@ -64,11 +64,11 @@ const ContactForm = () => {
           name="phone"
           value={formData.phone}
           onChange={handleChange}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+          className="mt-2 h-8 outline-none block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
         />
       </div>
 
-      <div>
+      <div className="flex flex-col space-y-1 ml-5 lg:ml-8 mt-5 w-[90%]">
         <label htmlFor="subject" className="block text-sm font-medium text-gray-700">
           Subject
         </label>
@@ -79,11 +79,11 @@ const ContactForm = () => {
           value={formData.subject}
           onChange={handleChange}
           required
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+          className="mt-2 h-8 outline-none block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
         />
       </div>
 
-      <div>
+      <div className="flex flex-col space-y-1 ml-5 lg:ml-8 mt-5 w-[90%]">
         <label htmlFor="message" className="block text-sm font-medium text-gray-700">
           Message
         </label>
@@ -94,11 +94,11 @@ const ContactForm = () => {
           onChange={handleChange}
           required
           rows={4}
-          className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
+          className="mt-2 outline-none block w-full rounded-md border-gray-300 shadow-sm focus:border-green-500 focus:ring-green-500"
         />
       </div>
 
-      <button type="submit" className="btn-primary w-full">
+      <button type="submit" className="btn-primary ml-5 lg:ml-8 mt-5 w-[90%]">
         Send Message
       </button>
     </form>

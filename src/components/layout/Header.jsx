@@ -7,10 +7,15 @@ const Header = () => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [showSaleBanner, setShowSaleBanner] = useState(true);
 
+  const handleMenuClick = () => {
+    setIsMenuOpen(false); // Close menu when link is clicked
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 bg-white shadow-md z-50">
+      {/* Sale Banner */}
       {showSaleBanner && (
-        <div className="bg-green-600 text-white py-2 md:py-4 px-2 md:px-4 text-sm md:text-xl flex flex-wrap md:flex-nowrap justify-between items-center">
+        <div className="bg-green-600 text-white py-2 md:py-4 px-2 md:px-4 text-sm md:text-xl flex flex-wrap md:flex-nowrap justify-between items-center z-10 relative">
           <div className="hidden md:flex flex-1"></div>
           <p className="flex-1 text-center text-xs sm:text-sm md:text-base lg:text-lg">🌿 Sale is Live! Get min 30% off on all products</p>
           <button
@@ -23,6 +28,7 @@ const Header = () => {
         </div>
       )}
 
+      {/* Navbar */}
       <nav className="container mx-auto px-4 py-2">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
@@ -85,19 +91,21 @@ const Header = () => {
         )}
 
         {/* Mobile Menu */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute top-full left-0 right-0 bg-white shadow-md">
-            <div className="flex flex-col p-3 space-y-3">
-              <Link to="/" className="nav-link text-base">Home</Link>
-              <Link to="/products" className="nav-link text-base">Products</Link>
-              <Link to="/about" className="nav-link text-base">About Us</Link>
-              <Link to="/contact" className="nav-link text-base">Contact</Link>
-              <Link to="/login" className="btn-primary text-center text-base">
-                Login
-              </Link>
-            </div>
+        <div
+          className={`md:hidden absolute top-[5rem] right-0 w-2/3 bg-white shadow-md transition-transform transform ${
+            isMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
+        >
+          <div className="flex flex-col p-3 space-y-3">
+            <Link to="/" className="nav-link text-base" onClick={handleMenuClick}>Home</Link>
+            <Link to="/products" className="nav-link text-base" onClick={handleMenuClick}>Products</Link>
+            <Link to="/about" className="nav-link text-base" onClick={handleMenuClick}>About Us</Link>
+            <Link to="/contact" className="nav-link text-base" onClick={handleMenuClick}>Contact</Link>
+            <Link to="/login" className="btn-primary text-center text-base" onClick={handleMenuClick}>
+              Login
+            </Link>
           </div>
-        )}
+        </div>
       </nav>
     </header>
   );

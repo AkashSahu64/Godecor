@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Instagram, Twitter, Mail, Phone, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Twitter, Mail, Phone, MapPin, Youtube, Linkedin, ShoppingBag } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -21,9 +21,15 @@ const Footer = () => {
             </h3>
             <p className="mb-4">Bringing nature indoors with our premium artificial plants.</p>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-white"><Facebook size={20} /></a>
-              <a href="#" className="hover:text-white"><Instagram size={20} /></a>
-              <a href="#" className="hover:text-white"><Twitter size={20} /></a>
+              <a href="https://www.facebook.com/www.thegodecor?mibextid=JRoKGi" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                <Facebook size={20} />
+              </a>
+
+              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white"><Twitter size={20} /></a>
+              <a href="https://www.instagram.com/godecor_official/?igsh=Z3I0Zzd4MzcwanU%3D#" target="_blank" rel="noopener noreferrer" className="hover:text-white"><Instagram size={20} /></a>
+              <a href="https://www.youtube.com/@godecor2868" target="_blank" rel="noopener noreferrer" className="hover:text-white"><Youtube size={20} /></a>
+              <a href="#" target="_blank" rel="noopener noreferrer" className="hover:text-white"><Linkedin size={20} /></a>
+              <a href="https://www.flipkart.com/home-decor/godecor~brand/pr?sid=arb" target="_blank" rel="noopener noreferrer" className="hover:text-white"><ShoppingBag size={20} /></a>
             </div>
           </div>
 
@@ -55,15 +61,15 @@ const Footer = () => {
             <ul className="space-y-2">
               <li className="flex items-center space-x-2">
                 <Phone size={16} />
-                <span>+1 (555) 123-4567</span>
+                <span>+91 9716584915, +91 9625643745</span>
               </li>
               <li className="flex items-center space-x-2">
                 <Mail size={16} />
-                <span>support@godecor.com</span>
+                <span>admin@thegodecor.com</span>
               </li>
               <li className="flex items-center space-x-2">
                 <MapPin size={16} />
-                <span>123 Green Street, Plant City, PC 12345</span>
+                <span>475A, H-Block, Phase-6, Aya Nagar, New Delhi-47</span>
               </li>
             </ul>
           </div>
